@@ -163,6 +163,9 @@
     .direccion{
         display: none !important;
     }
+    .Header{
+        border-bottom: none;
+    }
     @media screen and (max-width: 531px){
         .Header{
             height: 100px;
