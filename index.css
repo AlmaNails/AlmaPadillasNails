@@ -172,7 +172,7 @@
             margin-top: 10px;
             height: 120px;
         }
-        @media screen and (max-width: 359px) {
+        @media screen and (max-width: 360px) {
             .Header{
                 height: 130px;
             }
