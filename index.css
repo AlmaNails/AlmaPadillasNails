@@ -102,7 +102,7 @@
     background-color: #ececec;
 }
 .nails_bt{
-    width: 200px;
+    width: 250px;
     height: 45px;
     background-color: #9b6492   ;
     color: #ffffff;
@@ -167,11 +167,6 @@
     .pie{
         margin-top: 10px;
         height: 120px;
-    }
-    @media screen and (max-width: 359px){   
-        .Menu img{
-            
-        }
     }
 }
 .link{
