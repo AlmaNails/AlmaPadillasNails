@@ -152,6 +152,10 @@
     width: 280px;
     background-color: transparent;
 }
+.citas a{
+    text-decoration: none;
+    color: #ffffff;
+}
 .direccion{
     float: left;
     color: #ffffff;
