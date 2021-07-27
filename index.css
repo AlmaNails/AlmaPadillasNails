@@ -164,7 +164,6 @@
     .pie{
         height: 130px;
     }
-
     @media screen and (max-width: 531px){
         .Header{
             height: 100px;
