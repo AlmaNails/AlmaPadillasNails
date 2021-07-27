@@ -1,5 +1,8 @@
 *{
     margin: 0px;
+
+}
+.todo{
     background-color: #363434;
 }
 .body{
@@ -176,14 +179,18 @@
             .Header{
                 height: 130px;
             }
-            
-            @media screen and (max-width: 322px) {
-                .direccion{
-                    display: none !important;
+            @media screen and (max-width: 350px) {
+                .item{
+                    width: 325px;
                 }
-                .pie{
-                    height: 70px;
-                    margin-top: 60px;
+                @media screen and (max-width: 322px) {
+                    .direccion{
+                        display: none !important;
+                    }
+                    .pie{
+                        height: 70px;
+                        margin-top: 60px;
+                    }
                 }
             }
         }
