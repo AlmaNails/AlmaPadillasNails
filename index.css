@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: flex-start;
     justify-content: space-between;
 }
 
@@ -64,7 +64,6 @@
 .Menu img{
     width: 30px;
     height: 30px;
-    padding-top: 10px;
 }
 
 .item {
@@ -163,16 +162,20 @@
     .direccion{
         display: none !important;
     }
-    .Header{
-        border-bottom: none;
-    }
     @media screen and (max-width: 531px){
         .Header{
-            height: 100px;
+            height: 120px;
+            justify-content: center;
+        }
+        .Header h1{
+            text-align: center;
         }
         .pie{
             margin-top: 10px;
             height: 120px;
+        }
+        .Menu img{
+            margin-top: 10px;
         }
         @media screen and (max-width: 360px) {
             .Header{
