@@ -5,7 +5,7 @@
 }
 .body{
     background-color: #363434;
-    width: 100%;
+    width:100%;
     height: 100%;
     margin: 0px;
 }
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: space-between;
 }
 
@@ -52,56 +52,18 @@
 }
 .Menu a{
     text-decoration: none;
-    width: 50px;
-    height: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 .Menu img{
     width: 30px;
-    height: 30px;
-    margin-top: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
     background-color: transparent;
 }
-
-.item {
-    width: 350px;
-    height: 500px;
-    margin: 20px;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px;
-    box-sizing: unset;
-}
-.item p{
-    font-family: 'Comfortaa', cursive;
-    font-size: 30px;
-    margin: 0px;
-}
-.item img{
-    width: 300px;
-    height: 300px;
-    padding: 0px;
-    margin: 0px;
-    background-color: #000000;
-}
-.nails_bt{
-    width: 250px;
-    height: 45px;
-    background-color: #9b6492;
-    color: #ffffff;
-    border-style: none;
-    border-radius: 30px;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 700;
-    font-size: 1.3em;
-    text-transform: capitalize;
-    vertical-align: bottom;
-    cursor: pointer;
-    transition:all 500ms ease;
+.imagen{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    position: static;
 }
 .boxes{
     display: flex;
@@ -148,54 +110,43 @@
     padding-right: 10px;
     text-decoration: none;
 }
-@media screen and (max-width: 557px) {
-    .pie{
-        height: 70px;
+@media screen and (max-width:630px) {
+    .Header{
+        height: 100px;
+        justify-content: center;
+    }
+    @media screen and (max-width: 557px) {
+        .pie{
+            height: 70px;
         margin-top: 60px;
         text-align: center;
         justify-content: center;
-    }
-    .direccion{
-        display: none !important;
-    }
-    @media screen and (max-width: 531px){
-        .Header{
-            height: 140px;
-            justify-content: center;
-
         }
-        .Header h1{
-            text-align: center;
+        .direccion{
+            display: none;
         }
-        .pie{
-            height: 70px;
-            margin-top: 60px;
-        }
-        .Menu img{
-            margin-top: 10px;
-        }
-        @media screen and (max-width: 390px){
-            .item{
-                width: 300px;
-                height: 450px;
+        @media screen and (max-width: 531px){
+            .Header{
+                height: 140px;
+                justify-content: center;
             }
-            .item img{
-                height: 250px;
-                width: 250px;
+            .pie{
+                margin-top: 10px;
+                height: 120px;
             }
-            @media screen and (max-width: 360px) {
-                .Header{
-                    height: 150px;
+            .Header h1{
+                text-align: center;
+            }
+            @media screen and (max-width: 419px) {
+                .boxes img{
+                    width: 300px;
+                    height: 300px;
                 }
-                @media screen and (max-width: 350px) {
-                    .item{
-                        width: 300px;
-                        height: 400px;
+                @media screen and (max-width: 360px) {
+                    .Header{
+                        height: 150px;
                     }
-                    .item img{
-                        width: 225px;
-                        height: 225px;
-                    }
+                    
                     @media screen and (max-width: 322px) {
                         .direccion{
                             display: none !important;
@@ -204,17 +155,30 @@
                             height: 70px;
                             margin-top: 60px;
                         }
-                        @media screen and (max-width: 257px) {
-                            .Menu img{
-                                display: none;
+                        @media screen and (max-width: 310px) {
+                            .boxes img{
+                                width: 250px;
+                                height: 250px;
+                            }
+                            @media screen and (max-width: 257px) {
+                                .Menu img{
+                                    display: none;
+                                }
+                            }
+                            @media screen and (max-width: 260px) {
+                                .boxes img{
+                                    width: 200px;
+                                    height: 200px;
+                                }
                             }
                         }
                     }
                 }
-            }
-        }       
+            } 
+        }
     }
 }
+
 .link{
     text-decoration: none;
     color: #ffffff;

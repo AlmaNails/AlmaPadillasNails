@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     background-color: #363434;
+    text-align: center;
 }
 .body{
     background-color: #363434;
@@ -46,40 +47,25 @@
     padding-right: 0px;
     font-family: 'Playball', cursive;
     font-size: 20px;
-    height: 30px;
+    height: 40px;
     padding-top: 0px;
-}
-.Menu ul{
-    height: 30px;
-    margin: 0px;
-    padding: 0px;
-}
-.Menu li {
-    float: left;
-    list-style: none;
-    padding-right: 5px;
-    padding-left: 5px;
-    height: 20px;
-}
-.Menu a:hover h3{
-    color: #dfdfdf;
 }
 .Menu a{
     text-decoration: none;
-}
-.Menu h3{
-    margin: 0px;
-    color: #ffffff;
+    width: 50px;
+    height: 50px;
 }
 .Menu img{
     width: 30px;
     padding-right: 10px;
     padding-left: 10px;
+    background-color: transparent;
 }
-.boxes img{
+.imagen{
     width: 200px;
     height: 200px;
     padding: 5px;
+    position: static;
 }
 .boxes{
     display: flex;
@@ -124,54 +110,80 @@
     width: 540px;
     background-color: transparent;
     padding-right: 10px;
+    text-decoration: none;
 }
-@media screen and (max-width: 557px) {
-    .pie{
-        height: 130px;
+@media screen and (max-width:630px) {
+    .Header{
+        height: 100px;
+        justify-content: center;
     }
-    @media screen and (max-width: 531px){
-        .Header{
-            height: 100px;
-        }
+    @media screen and (max-width: 557px) {
         .pie{
-            margin-top: 10px;
-            height: 120px;
+            height: 70px;
+        margin-top: 60px;
+        text-align: center;
+        justify-content: center;
         }
-        @media screen and (max-width: 419px) {
-            .boxes img{
-                width: 300px;
-                height: 300px;
+        .direccion{
+            display: none !important;
+        }
+        @media screen and (max-width: 531px){
+            .Header{
+                height: 140px;
+                justify-content: center;
             }
-            @media screen and (max-width: 360px) {
-                .Header{
-                    height: 130px;
+            .pie{
+                margin-top: 10px;
+                height: 120px;
+            }
+            .Header h1{
+                text-align: center;
+            }
+            .Menu img{
+                margin-top: 10px;
+            }
+            @media screen and (max-width: 419px) {
+                .boxes img{
+                    width: 300px;
+                    height: 300px;
                 }
-                
-                @media screen and (max-width: 322px) {
-                    .direccion{
-                        display: none !important;
+                @media screen and (max-width: 360px) {
+                    .Header{
+                        height: 150px;
                     }
-                    .pie{
-                        height: 70px;
-                        margin-top: 60px;
-                    }
-                    @media screen and (max-width: 310px) {
-                        .boxes img{
-                            width: 250px;
-                            height: 250px;
+                    
+                    @media screen and (max-width: 322px) {
+                        .direccion{
+                            display: none !important;
                         }
-                        @media screen and (max-width: 260px) {
+                        .pie{
+                            height: 70px;
+                            margin-top: 60px;
+                        }
+                        @media screen and (max-width: 310px) {
                             .boxes img{
-                                width: 200px;
-                                height: 200px;
+                                width: 250px;
+                                height: 250px;
+                            }
+                            @media screen and (max-width: 257px) {
+                                .Menu img{
+                                    display: none;
+                                }
+                            }
+                            @media screen and (max-width: 260px) {
+                                .boxes img{
+                                    width: 200px;
+                                    height: 200px;
+                                }
                             }
                         }
                     }
                 }
-            }
-        } 
+            } 
+        }
     }
 }
+
 .link{
     text-decoration: none;
     color: #ffffff;
